@@ -18,14 +18,14 @@ const Pricing = () => {
             Secure recurring payment with no commitment. Cancel at any time.
           </p>
 
-          <div className="inline-flex rounded-xl border border-[#8A96D9] bg-white overflow-hidden shadow-sm">
-            <button className="px-8 py-3 text-[1.1rem] font-bold text-[#4653A2] border-r border-[#8A96D9] hover:bg-blue-50 transition-colors">
+          <div className="flex w-full sm:w-auto sm:inline-flex rounded-xl border border-[#8A96D9] bg-white overflow-hidden shadow-sm">
+            <button className="flex-1 sm:flex-none px-2 sm:px-6 md:px-8 py-2 md:py-3 text-[0.85rem] sm:text-[1rem] md:text-[1.1rem] font-bold text-[#4653A2] border-r border-[#8A96D9] hover:bg-blue-50 transition-colors whitespace-nowrap">
               2 years
             </button>
-            <button className="px-8 py-3 text-[1.1rem] font-semibold text-[#8A96D9] border-r border-[#8A96D9] hover:bg-blue-50 transition-colors">
+            <button className="flex-1 sm:flex-none px-2 sm:px-6 md:px-8 py-2 md:py-3 text-[0.85rem] sm:text-[1rem] md:text-[1.1rem] font-semibold text-[#8A96D9] border-r border-[#8A96D9] hover:bg-blue-50 transition-colors whitespace-nowrap">
               1 year
             </button>
-            <button className="px-8 py-3 text-[1.1rem] font-semibold text-[#8A96D9] hover:bg-blue-50 transition-colors">
+            <button className="flex-1 sm:flex-none px-2 sm:px-6 md:px-8 py-2 md:py-3 text-[0.85rem] sm:text-[1rem] md:text-[1.1rem] font-semibold text-[#8A96D9] hover:bg-blue-50 transition-colors whitespace-nowrap">
               Monthly
             </button>
           </div>
