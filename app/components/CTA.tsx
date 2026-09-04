@@ -7,7 +7,7 @@ const CTA = () => {
         {/* Background Stacked Card */}
         <div className="absolute top-6 left-6 right-6 bottom-[-24px] bg-[#E1E5F8] rounded-[2rem] z-0" />
 
-        {/* Main Card */}
+        {/* Main Cardd */}
         <div className="relative z-10 bg-[#0B0F6B] rounded-[2rem] p-10 md:p-16 text-center text-white shadow-xl">
           <h2 className="text-[1.8rem] md:text-[2.2rem] font-bold leading-tight mb-6 max-w-4xl mx-auto">
             Take advantage of our 7 day free trial for private and business
