@@ -1,21 +1,41 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 
+const PlaceholderDropdown = () => (
+  <div className="absolute left-0 mt-2 w-56 bg-white text-gray-900 rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-3">
+    <div className="py-1">
+      <Link href="#" className="block p-2.5 hover:bg-gray-50 rounded-lg font-medium">
+        Placeholder Link 1
+      </Link>
+      <Link href="#" className="block p-2.5 hover:bg-gray-50 rounded-lg font-medium">
+        Placeholder Link 2
+      </Link>
+      <Link href="#" className="block p-2.5 hover:bg-gray-50 rounded-lg font-medium">
+        Placeholder Link 3
+      </Link>
+    </div>
+  </div>
+);
+
 export default function Navbar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <nav className="w-full flex items-center justify-between px-6 py-4 absolute top-0 left-0 right-0 z-50 text-white">
       {/* Logo */}
-      <div className="flex-shrink-0">
+      <div className="flex-shrink-0 relative z-50">
         <Link href="/" className="text-2xl font-bold italic tracking-tight">
           transfernow
         </Link>
       </div>
 
-      {/* Main Links */}
+      {/* Main Links (Desktop) */}
       <div className="hidden lg:flex items-center space-x-6 text-sm font-medium">
         <div className="relative group">
-          <button className="flex items-center hover:text-gray-200 transition-colors">
+          <button className="flex items-center hover:text-gray-200 transition-colors py-2">
             Discover <ChevronDown className="ml-1 w-4 h-4" />
           </button>
           {/* Dropdown Menu */}
@@ -52,34 +72,39 @@ export default function Navbar() {
         </div>
         
         <div className="relative group">
-          <button className="flex items-center hover:text-gray-200 transition-colors">
+          <button className="flex items-center hover:text-gray-200 transition-colors py-2">
             Offers and prices <ChevronDown className="ml-1 w-4 h-4" />
           </button>
+          <PlaceholderDropdown />
         </div>
         <div className="relative group">
-          <button className="flex items-center hover:text-gray-200 transition-colors">
+          <button className="flex items-center hover:text-gray-200 transition-colors py-2">
             Solutions <ChevronDown className="ml-1 w-4 h-4" />
           </button>
+          <PlaceholderDropdown />
         </div>
         <div className="relative group">
-          <button className="flex items-center hover:text-gray-200 transition-colors">
+          <button className="flex items-center hover:text-gray-200 transition-colors py-2">
             Apps <ChevronDown className="ml-1 w-4 h-4" />
           </button>
+          <PlaceholderDropdown />
         </div>
         <div className="relative group">
-          <button className="flex items-center hover:text-gray-200 transition-colors">
+          <button className="flex items-center hover:text-gray-200 transition-colors py-2">
             Developers <ChevronDown className="ml-1 w-4 h-4" />
           </button>
+          <PlaceholderDropdown />
         </div>
         <div className="relative group">
-          <button className="flex items-center hover:text-gray-200 transition-colors">
+          <button className="flex items-center hover:text-gray-200 transition-colors py-2">
             Resources <ChevronDown className="ml-1 w-4 h-4" />
           </button>
+          <PlaceholderDropdown />
         </div>
       </div>
 
-      {/* Action Buttons */}
-      <div className="hidden lg:flex items-center space-x-3 bg-white/90 rounded-full p-1 border border-white/20">
+      {/* Action Buttons (Desktop) */}
+      <div className="hidden lg:flex items-center space-x-3 bg-white/90 rounded-full p-1 border border-white/20 relative z-50">
         <button className="px-5 py-2 text-sm font-medium text-gray-800 hover:bg-gray-100 rounded-full transition-colors">
           Sign in
         </button>
@@ -88,11 +113,84 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu Icon (Placeholder) */}
-      <div className="lg:hidden">
-        <button className="p-2">
-           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /></svg>
+      {/* Mobile Menu Icon */}
+      <div className="lg:hidden relative z-50">
+        <button 
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          className="p-2 flex flex-col justify-center items-center gap-1.5 w-10 h-10"
+          aria-label="Toggle menu"
+        >
+          <span className={`block w-6 h-[2px] bg-white rounded-full transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'rotate-45 translate-y-[8px]' : ''}`} />
+          <span className={`block w-6 h-[2px] bg-white rounded-full transition-opacity duration-300 ease-in-out ${isMobileMenuOpen ? 'opacity-0' : 'opacity-100'}`} />
+          <span className={`block w-6 h-[2px] bg-white rounded-full transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? '-rotate-45 -translate-y-[8px]' : ''}`} />
         </button>
+      </div>
+
+      {/* Mobile Modal Menu Overlay */}
+      <div 
+        className={`fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm transition-opacity duration-300 lg:hidden flex justify-center items-start pt-6 px-4 ${
+          isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+        }`}
+        onClick={() => setIsMobileMenuOpen(false)}
+      >
+        <div 
+          className={`w-full max-w-[360px] bg-white rounded-lg shadow-2xl overflow-hidden flex flex-col transition-transform duration-300 ${
+            isMobileMenuOpen ? 'translate-y-0 scale-100' : '-translate-y-8 scale-95'
+          }`}
+          onClick={(e) => e.stopPropagation()}
+        >
+          {/* Modal Header */}
+          <div className="flex items-center justify-between px-6 py-4 bg-[#0A102E] text-white">
+            <Link href="/" className="text-xl font-bold italic tracking-tight" onClick={() => setIsMobileMenuOpen(false)}>
+              transfernow
+            </Link>
+            <button 
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="p-1 hover:bg-white/10 rounded-md transition-colors"
+              aria-label="Close menu"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          {/* Modal Body */}
+          <div className="px-6 py-5 flex flex-col text-sm">
+            <Link href="#" className="text-gray-900 font-medium py-2 hover:text-[#4653A2] transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Discover TransferNow</Link>
+            <Link href="#" className="text-gray-900 font-medium py-2 hover:text-[#4653A2] transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Features</Link>
+            <Link href="#" className="text-gray-900 font-medium py-2 hover:text-[#4653A2] transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Plans and pricing</Link>
+            <Link href="#" className="text-gray-900 font-medium py-2 hover:text-[#4653A2] transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Applications</Link>
+            <Link href="#" className="text-gray-900 font-medium py-2 hover:text-[#4653A2] transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Solutions</Link>
+            <Link href="#" className="text-gray-900 font-medium py-2 hover:text-[#4653A2] transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Sign in</Link>
+            <Link href="#" className="text-gray-900 font-medium py-2 hover:text-[#4653A2] transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Sign up</Link>
+
+            <div className="w-full h-px bg-gray-100 my-4" />
+
+            <div className="flex flex-wrap gap-x-4 gap-y-2 text-[11px] text-gray-500 font-medium">
+              <Link href="#" className="hover:text-gray-900 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Support & FAQ</Link>
+              <Link href="#" className="hover:text-gray-900 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Transfer files</Link>
+              <Link href="#" className="hover:text-gray-900 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Request files</Link>
+              
+              <Link href="#" className="hover:text-gray-900 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>TransferNow vs WeTransfer</Link>
+              <Link href="#" className="hover:text-gray-900 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Send all file types</Link>
+              <Link href="#" className="hover:text-gray-900 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link>
+              
+              <Link href="#" className="hover:text-gray-900 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Tutorials and guides</Link>
+              <Link href="#" className="hover:text-gray-900 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Security</Link>
+              <Link href="#" className="hover:text-gray-900 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Terms of use</Link>
+              <Link href="#" className="hover:text-gray-900 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Privacy</Link>
+              
+              <Link href="#" className="hover:text-gray-900 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Contact support</Link>
+              <Link href="#" className="hover:text-gray-900 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Contact sales</Link>
+              <Link href="#" className="hover:text-gray-900 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Service status</Link>
+            </div>
+
+            <div className="w-full h-px bg-gray-100 my-4" />
+            
+            <Link href="#" className="text-[11px] text-gray-500 hover:text-gray-900 transition-colors font-medium" onClick={() => setIsMobileMenuOpen(false)}>Available languages</Link>
+          </div>
+        </div>
       </div>
     </nav>
   );

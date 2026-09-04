@@ -13,7 +13,7 @@ const AvailablePlatforms = () => {
         <div className="bg-white rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.03)] border border-gray-50 p-6 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-0">
           
           {/* Group 1: Web & API */}
-          <div className="flex items-center justify-center gap-12 w-full md:w-auto flex-1 px-4">
+          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-12 w-full md:w-auto flex-1 px-4 py-4 md:py-0">
             {/* Web */}
             <div className="flex flex-col items-center gap-3">
               <Cloud className="w-10 h-10 text-[#8A96D9]" fill="currentColor" strokeWidth={0} />
@@ -33,11 +33,11 @@ const AvailablePlatforms = () => {
             </div>
           </div>
 
-          <div className="hidden md:block w-px h-24 bg-gray-100" />
+          <div className="hidden md:block w-px h-24 bg-gray-100 shrink-0" />
           <div className="md:hidden w-full h-px bg-gray-100" />
 
           {/* Group 2: Desktop */}
-          <div className="flex items-center justify-center gap-8 lg:gap-12 w-full md:w-auto flex-[1.5] px-4">
+          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8 lg:gap-12 w-full md:w-auto flex-[1.5] px-4 py-4 md:py-0">
             {/* Windows */}
             <div className="flex flex-col items-center gap-3">
               <FaWindows className="w-10 h-10 text-[#00A4EF]" />
@@ -66,11 +66,11 @@ const AvailablePlatforms = () => {
             </div>
           </div>
 
-          <div className="hidden md:block w-px h-24 bg-gray-100" />
+          <div className="hidden md:block w-px h-24 bg-gray-100 shrink-0" />
           <div className="md:hidden w-full h-px bg-gray-100" />
 
           {/* Group 3: Mobile */}
-          <div className="flex items-center justify-center gap-12 w-full md:w-auto flex-1 px-4">
+          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-12 w-full md:w-auto flex-1 px-4 py-4 md:py-0">
              {/* iOS */}
              <div className="flex flex-col items-center gap-3">
               <FaAppStoreIos className="w-10 h-10 text-black" />

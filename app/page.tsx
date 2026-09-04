@@ -12,22 +12,24 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="w-full font-sans text-gray-900">
+    <main className="w-full font-sans text-gray-900 overflow-x-hidden">
       {/* First Screen / Hero Section */}
       <div className="relative min-h-screen w-full flex flex-col">
         {/* Background Video */}
-        <div className="absolute inset-0 z-0 overflow-hidden">
+        <div className="absolute inset-0 z-0 overflow-hidden bg-[#1A1A1A]">
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="w-full h-full object-cover"
+            preload="auto"
+            poster="https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            className="w-full h-full object-cover opacity-80"
           >
-            <source src="https://www.pexels.com/download/video/33352808/" type="video/mp4" />
+            <source src="/hero-video.mp4" type="video/mp4" />
           </video>
           {/* Optional Overlay for better readability */}
-          <div className="absolute inset-0 bg-black/10 mix-blend-overlay" />
+          <div className="absolute inset-0 bg-black/30 mix-blend-overlay" />
         </div>
 
         <div className="relative z-10 flex flex-col flex-grow">
