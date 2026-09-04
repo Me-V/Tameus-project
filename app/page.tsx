@@ -1,28 +1,70 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import FooterStats from "./components/FooterStats";
+import HowItWorks from "./components/HowItWorks";
+import IntegrateWidget from "./components/IntegrateWidget";
+import AvailablePlatforms from "./components/AvailablePlatforms";
+import MailboxIntegration from "./components/MailboxIntegration";
+import Pricing from "./components/Pricing";
+import FAQ from "./components/FAQ";
+import CTA from "./components/CTA";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen w-full overflow-hidden font-sans flex flex-col">
-      {/* Background Gradient similar to the 3D sky aesthetic */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-br from-[#5D6BDE] via-[#7B8BF0] to-[#9FA8EE]" />
-      
-      {/* Add some simple background shapes to mimic 3D depth */}
-      <div className="absolute inset-0 z-0 opacity-40 mix-blend-overlay overflow-hidden pointer-events-none">
-         <div className="absolute top-20 right-20 w-96 h-96 bg-white/20 rounded-full blur-3xl" />
-         <div className="absolute -bottom-20 -left-20 w-[500px] h-[500px] bg-[#4F5BDB]/40 rounded-full blur-3xl" />
-         <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-[#FDE047]/10 rounded-full blur-2xl" />
+    <main className="w-full font-sans text-gray-900">
+      {/* First Screen / Hero Section */}
+      <div className="relative min-h-screen w-full flex flex-col">
+        {/* Background Video */}
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+          >
+            <source src="https://www.pexels.com/download/video/33352808/" type="video/mp4" />
+          </video>
+          {/* Optional Overlay for better readability */}
+          <div className="absolute inset-0 bg-black/10 mix-blend-overlay" />
+        </div>
+
+        <div className="relative z-10 flex flex-col flex-grow">
+          <Navbar />
+          
+          {/* Main Content Area */}
+          <div className="flex-grow flex items-center justify-center">
+            <Hero />
+          </div>
+
+          <FooterStats />
+        </div>
       </div>
 
-      <Navbar />
-      
-      {/* Main Content Area */}
-      <div className="relative z-10 flex-grow flex items-center justify-center">
-        <Hero />
-      </div>
+      {/* Second Screen / How It Works */}
+      <HowItWorks />
 
-      <FooterStats />
+      {/* Third Screen / Integrate Widget */}
+      <IntegrateWidget />
+
+      {/* Fourth Screen / Available Platforms */}
+      <AvailablePlatforms />
+
+      {/* Fifth Screen / Mailbox Integration */}
+      <MailboxIntegration />
+
+      {/* Sixth Screen / Pricing */}
+      <Pricing />
+
+      {/* Seventh Screen / FAQ */}
+      <FAQ />
+
+      {/* Eighth Screen / CTA */}
+      <CTA />
+
+      {/* Footer */}
+      <Footer />
     </main>
   );
 }

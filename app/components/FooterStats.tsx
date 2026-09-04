@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function FooterStats() {
   return (
-    <div className="absolute bottom-0 left-0 right-0 z-40 w-full px-6 py-4 flex flex-col md:flex-row items-end md:items-center justify-between pb-8 md:pb-4">
+    <div className="z-40 w-full px-6 py-4 flex flex-col md:flex-row items-center justify-between pb-8 md:pb-4 shrink-0">
       {/* Stats Section */}
       <div className="flex flex-wrap items-center gap-4 md:gap-12 justify-center md:justify-start w-full md:w-auto mb-6 md:mb-0">
         <div className="text-center">
