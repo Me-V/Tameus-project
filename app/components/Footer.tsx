@@ -122,7 +122,7 @@ const Footer = () => {
               <li><a href="#" className="hover:text-[#4653A2] transition-colors">Top 10 File Transfer Services</a></li>
             </ul>
 
-            <button className="flex items-center justify-between w-[200px] border border-gray-200 rounded-lg px-4 py-2 text-gray-600 hover:border-gray-300 transition-colors bg-white">
+            <button className="flex items-center justify-between w-[200px] border border-gray-200 rounded-lg px-4 py-2 text-gray-600 hover:border-gray-300 transition-colors bg-white cursor-pointer">
               <span className="flex items-center gap-2 text-[0.85rem] font-medium">
                 <span className="bg-[#4653A2] text-white text-[10px] px-1 rounded-sm">A</span>
                 <span className="bg-[#4653A2] text-white text-[10px] px-1 rounded-sm">文</span>
@@ -138,8 +138,7 @@ const Footer = () => {
           <p>Made in France with ❤️ and lots of ☕.</p>
           <p className="mt-4 md:mt-0">2013 - 2026 © TransferNow — All rights reserved</p>
           
-          <button 
-            className="hidden md:flex absolute right-0 -top-[1.2rem] bg-white border border-gray-100 shadow-sm rounded-full p-2 hover:shadow transition-shadow text-[#4653A2]"
+          <button className="hidden md:flex absolute right-0 -top-[1.2rem] bg-white border border-gray-100 shadow-sm rounded-full p-2 hover:shadow transition-shadow text-[#4653A2] cursor-pointer"
             aria-label="Scroll to top"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >

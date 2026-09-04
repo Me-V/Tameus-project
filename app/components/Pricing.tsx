@@ -19,13 +19,13 @@ const Pricing = () => {
           </p>
 
           <div className="flex w-full sm:w-auto sm:inline-flex rounded-xl border border-[#8A96D9] bg-white overflow-hidden shadow-sm">
-            <button className="flex-1 sm:flex-none px-2 sm:px-6 md:px-8 py-2 md:py-3 text-[0.85rem] sm:text-[1rem] md:text-[1.1rem] font-bold text-[#4653A2] border-r border-[#8A96D9] hover:bg-blue-50 transition-colors whitespace-nowrap">
+            <button className="flex-1 sm:flex-none px-2 sm:px-6 md:px-8 py-2 md:py-3 text-[0.85rem] sm:text-[1rem] md:text-[1.1rem] font-bold text-[#4653A2] border-r border-[#8A96D9] hover:bg-blue-50 transition-colors whitespace-nowrap cursor-pointer">
               2 years
             </button>
-            <button className="flex-1 sm:flex-none px-2 sm:px-6 md:px-8 py-2 md:py-3 text-[0.85rem] sm:text-[1rem] md:text-[1.1rem] font-semibold text-[#8A96D9] border-r border-[#8A96D9] hover:bg-blue-50 transition-colors whitespace-nowrap">
+            <button className="flex-1 sm:flex-none px-2 sm:px-6 md:px-8 py-2 md:py-3 text-[0.85rem] sm:text-[1rem] md:text-[1.1rem] font-semibold text-[#8A96D9] border-r border-[#8A96D9] hover:bg-blue-50 transition-colors whitespace-nowrap cursor-pointer">
               1 year
             </button>
-            <button className="flex-1 sm:flex-none px-2 sm:px-6 md:px-8 py-2 md:py-3 text-[0.85rem] sm:text-[1rem] md:text-[1.1rem] font-semibold text-[#8A96D9] hover:bg-blue-50 transition-colors whitespace-nowrap">
+            <button className="flex-1 sm:flex-none px-2 sm:px-6 md:px-8 py-2 md:py-3 text-[0.85rem] sm:text-[1rem] md:text-[1.1rem] font-semibold text-[#8A96D9] hover:bg-blue-50 transition-colors whitespace-nowrap cursor-pointer">
               Monthly
             </button>
           </div>
@@ -47,7 +47,7 @@ const Pricing = () => {
                 No registration
               </div>
               
-              <button className="w-full py-2.5 rounded-lg border border-[#4653A2] text-[#4653A2] hover:bg-blue-50 font-medium transition-colors">
+              <button className="w-full py-2.5 rounded-lg border border-[#4653A2] text-[#4653A2] hover:bg-blue-50 font-medium transition-colors cursor-pointer">
                 Send files
               </button>
             </div>
@@ -92,10 +92,10 @@ const Pricing = () => {
                 </div>
                 
                 <div className="space-y-3">
-                  <button className="w-full py-2.5 rounded-lg bg-[#FF6B6B] hover:bg-[#E55A5A] text-white font-medium transition-colors">
+                  <button className="w-full py-2.5 rounded-lg bg-[#FF6B6B] hover:bg-[#E55A5A] text-white font-medium transition-colors cursor-pointer">
                     Continue with Premium
                   </button>
-                  <button className="w-full py-2.5 rounded-lg border border-[#FF6B6B] text-[#FF6B6B] hover:bg-red-50 font-medium transition-colors">
+                  <button className="w-full py-2.5 rounded-lg border border-[#FF6B6B] text-[#FF6B6B] hover:bg-red-50 font-medium transition-colors cursor-pointer">
                     Free trial
                   </button>
                 </div>
@@ -144,10 +144,10 @@ const Pricing = () => {
                 </div>
                 
                 <div className="space-y-3">
-                  <button className="w-full py-2.5 rounded-lg bg-[#4653A2] hover:bg-[#384384] text-white font-medium transition-colors">
+                  <button className="w-full py-2.5 rounded-lg bg-[#4653A2] hover:bg-[#384384] text-white font-medium transition-colors cursor-pointer">
                     Continue with Team
                   </button>
-                  <button className="w-full py-2.5 rounded-lg border border-[#4653A2] text-[#4653A2] hover:bg-blue-50 font-medium transition-colors">
+                  <button className="w-full py-2.5 rounded-lg border border-[#4653A2] text-[#4653A2] hover:bg-blue-50 font-medium transition-colors cursor-pointer">
                     Free trial
                   </button>
                 </div>
@@ -189,7 +189,7 @@ const Pricing = () => {
                 10 users or more
               </div>
               
-              <button className="w-full py-2.5 rounded-lg bg-[#4653A2] hover:bg-[#384384] text-white font-medium transition-colors">
+              <button className="w-full py-2.5 rounded-lg bg-[#4653A2] hover:bg-[#384384] text-white font-medium transition-colors cursor-pointer">
                 Contact us
               </button>
             </div>
@@ -239,7 +239,7 @@ const Pricing = () => {
 
           {/* Far Right section (Button) */}
           <div className="lg:w-[220px] shrink-0 flex flex-col items-center">
-            <button className="w-full py-2.5 rounded-lg border border-[#4653A2] text-[#4653A2] hover:bg-blue-50 font-medium transition-colors mb-2">
+            <button className="w-full py-2.5 rounded-lg border border-[#4653A2] text-[#4653A2] hover:bg-blue-50 font-medium transition-colors mb-2 cursor-pointer">
               Continue with Starter
             </button>
             <p className="text-gray-400 text-xs">For individual use</p>

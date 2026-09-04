@@ -32,7 +32,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center pt-10 md:pt-20 pb-8 px-4 z-10 w-full shrink-0">
+    <div className="flex flex-col items-center justify-center pt-20 md:pt-20 pb-8 px-4 z-10 w-full shrink-0">
       <h1 className="text-[1.75rem] leading-tight md:text-4xl font-bold text-white text-center mb-3 shrink-0">
         Transfer and have your files travel for free
       </h1>
@@ -84,15 +84,17 @@ export default function Hero() {
 
           <div className="flex items-center justify-center my-4">
             <hr className="w-1/4 border-gray-200" />
-            <span className="px-2 text-[10px] md:text-xs text-gray-400">OR</span>
+            <span className="px-2 text-[10px] md:text-xs text-gray-400">
+              OR
+            </span>
             <hr className="w-1/4 border-gray-200" />
           </div>
 
           <div className="flex justify-center space-x-6 mt-4">
-            <button className="p-2 md:p-3 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-colors">
+            <button className="p-2 md:p-3 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-colors cursor-pointer">
               <Copy className="w-5 h-5 md:w-6 md:h-6" />
             </button>
-            <button className="p-2 md:p-3 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-colors">
+            <button className="p-2 md:p-3 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-colors cursor-pointer">
               <PlusSquare className="w-5 h-5 md:w-6 md:h-6" />
             </button>
           </div>

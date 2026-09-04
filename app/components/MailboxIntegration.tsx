@@ -30,7 +30,7 @@ const MailboxIntegration = () => {
               Optimize large file transfers with TransferNow for Outlook. Easy to use, it enables rapid uploading directly from Outlook. Save time and increase efficiency!
             </p>
             
-            <button className="bg-[#4653A2] hover:bg-[#384384] text-white font-medium py-3 px-8 rounded-lg transition-colors text-[1rem] shadow-sm">
+            <button className="bg-[#4653A2] hover:bg-[#384384] text-white font-medium py-3 px-8 rounded-lg transition-colors text-[1rem] shadow-sm cursor-pointer">
               Discover the Outlook add-in
             </button>
           </div>
@@ -58,7 +58,7 @@ const MailboxIntegration = () => {
               Discover the TransferNow extension for Chrome and Gmail: the ideal solution for transferring large files easily. Perfect integration, fast and secure transfer directly from your browser or Gmail.
             </p>
             
-            <button className="bg-[#4653A2] hover:bg-[#384384] text-white font-medium py-3 px-8 rounded-lg transition-colors text-[1rem] shadow-sm">
+            <button className="bg-[#4653A2] hover:bg-[#384384] text-white font-medium py-3 px-8 rounded-lg transition-colors text-[1rem] shadow-sm cursor-pointer">
               Discover the Chrome extension
             </button>
           </div>

@@ -22,10 +22,10 @@ const CTA = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="w-full sm:w-auto px-8 py-3 bg-[#4653A2] hover:bg-[#384384] text-white font-medium rounded-lg transition-colors text-[1.05rem]">
+            <button className="w-full sm:w-auto px-8 py-3 bg-[#4653A2] hover:bg-[#384384] text-white font-medium rounded-lg transition-colors text-[1.05rem] cursor-pointer">
               Register
             </button>
-            <button className="w-full sm:w-auto px-8 py-3 bg-transparent hover:bg-white/10 text-white font-medium rounded-lg border border-white transition-colors text-[1.05rem]">
+            <button className="w-full sm:w-auto px-8 py-3 bg-transparent hover:bg-white/10 text-white font-medium rounded-lg border border-white transition-colors text-[1.05rem] cursor-pointer">
               Compare our offers
             </button>
           </div>

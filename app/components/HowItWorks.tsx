@@ -89,10 +89,10 @@ const HowItWorks = () => {
         </div>
         
         <div className="flex flex-col sm:flex-row items-center gap-4 max-w-6xl mx-auto">
-          <button className="bg-[#4653A2] hover:bg-[#384384] text-white font-medium py-3.5 px-8 rounded-lg transition-colors w-full sm:w-auto text-[1.05rem]">
+          <button className="bg-[#4653A2] hover:bg-[#384384] text-white font-medium py-3.5 px-8 rounded-lg transition-colors w-full sm:w-auto text-[1.05rem] cursor-pointer">
             Send files now
           </button>
-          <button className="bg-white border border-[#CED4DA] hover:border-[#4653A2] text-[#4653A2] font-medium py-3.5 px-8 rounded-lg transition-colors w-full sm:w-auto text-[1.05rem]">
+          <button className="bg-white border border-[#CED4DA] hover:border-[#4653A2] text-[#4653A2] font-medium py-3.5 px-8 rounded-lg transition-colors w-full sm:w-auto text-[1.05rem] cursor-pointer">
             Compare our offers
           </button>
         </div>

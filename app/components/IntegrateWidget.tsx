@@ -13,7 +13,7 @@ const IntegrateWidget = () => {
           <p className="text-gray-600 text-[1.1rem] leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
             Discover our tool for creating <span className="font-semibold text-gray-800">customized forms</span> and then by adding a <span className="font-semibold text-gray-800">simple line of HTML code</span> on your internet site you can directly receive files.
           </p>
-          <button className="bg-[#4653A2] hover:bg-[#384384] text-white font-medium py-3 px-8 rounded-lg transition-colors text-[1.05rem]">
+          <button className="bg-[#4653A2] hover:bg-[#384384] text-white font-medium py-3 px-8 rounded-lg transition-colors text-[1.05rem] cursor-pointer">
             Free trial
           </button>
         </div>

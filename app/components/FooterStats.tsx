@@ -31,10 +31,10 @@ export default function FooterStats() {
 
       {/* Floating Toggles */}
       <div className="flex bg-white rounded-full p-1 shadow-lg mt-4 md:mt-0 mx-auto md:mx-0 shrink-0">
-        <button className="px-6 py-2 bg-[#FDE047] text-gray-900 rounded-full font-semibold shadow-sm transition-transform hover:scale-105">
+        <button className="px-6 py-2 bg-[#FDE047] text-gray-900 rounded-full font-semibold shadow-sm transition-transform hover:scale-105 cursor-pointer">
           Send
         </button>
-        <button className="px-6 py-2 text-gray-600 hover:text-gray-900 rounded-full font-semibold transition-colors">
+        <button className="px-6 py-2 text-gray-600 hover:text-gray-900 rounded-full font-semibold transition-colors cursor-pointer">
           Receive
         </button>
       </div>

@@ -18,7 +18,7 @@ const AvailablePlatforms = () => {
             <div className="flex flex-col items-center gap-3">
               <Cloud className="w-10 h-10 text-[#8A96D9]" fill="currentColor" strokeWidth={0} />
               <span className="text-gray-800 font-medium text-[1.1rem]">Web</span>
-              <button className="px-6 py-1.5 rounded-md border border-[#8A96D9] text-[#4653A2] hover:bg-blue-50 font-medium transition-colors text-sm">
+              <button className="px-6 py-1.5 rounded-md border border-[#8A96D9] text-[#4653A2] hover:bg-blue-50 font-medium transition-colors text-sm cursor-pointer">
                 Use
               </button>
             </div>
@@ -27,7 +27,7 @@ const AvailablePlatforms = () => {
             <div className="flex flex-col items-center gap-3">
               <Settings className="w-10 h-10 text-[#4B5563]" strokeWidth={2.5} />
               <span className="text-gray-800 font-medium text-[1.1rem]">API</span>
-              <button className="px-6 py-1.5 rounded-md bg-[#4B5563] hover:bg-gray-800 text-white font-medium transition-colors text-sm">
+              <button className="px-6 py-1.5 rounded-md bg-[#4B5563] hover:bg-gray-800 text-white font-medium transition-colors text-sm cursor-pointer">
                 View
               </button>
             </div>
@@ -42,7 +42,7 @@ const AvailablePlatforms = () => {
             <div className="flex flex-col items-center gap-3">
               <FaWindows className="w-10 h-10 text-[#00A4EF]" />
               <span className="text-gray-800 font-medium text-[1.1rem]">Windows</span>
-              <button className="px-6 py-1.5 rounded-md bg-[#00A4EF] hover:bg-[#008DD1] text-white font-medium transition-colors text-sm shadow-sm hover:shadow">
+              <button className="px-6 py-1.5 rounded-md bg-[#00A4EF] hover:bg-[#008DD1] text-white font-medium transition-colors text-sm shadow-sm hover:shadow cursor-pointer">
                 Download
               </button>
             </div>
@@ -51,7 +51,7 @@ const AvailablePlatforms = () => {
             <div className="flex flex-col items-center gap-3">
               <FaApple className="w-10 h-10 text-[#5A639C]" />
               <span className="text-gray-800 font-medium text-[1.1rem]">macOS</span>
-              <button className="px-6 py-1.5 rounded-md bg-[#5A639C] hover:bg-[#4A538C] text-white font-medium transition-colors text-sm shadow-sm hover:shadow">
+              <button className="px-6 py-1.5 rounded-md bg-[#5A639C] hover:bg-[#4A538C] text-white font-medium transition-colors text-sm shadow-sm hover:shadow cursor-pointer">
                 Download
               </button>
             </div>
@@ -60,7 +60,7 @@ const AvailablePlatforms = () => {
             <div className="flex flex-col items-center gap-3">
               <FaLinux className="w-10 h-10 text-[#374151]" />
               <span className="text-gray-800 font-medium text-[1.1rem]">Linux</span>
-              <button className="px-6 py-1.5 rounded-md bg-[#F59E0B] hover:bg-[#D97706] text-white font-medium transition-colors text-sm shadow-sm hover:shadow">
+              <button className="px-6 py-1.5 rounded-md bg-[#F59E0B] hover:bg-[#D97706] text-white font-medium transition-colors text-sm shadow-sm hover:shadow cursor-pointer">
                 Download
               </button>
             </div>
@@ -75,7 +75,7 @@ const AvailablePlatforms = () => {
              <div className="flex flex-col items-center gap-3">
               <FaAppStoreIos className="w-10 h-10 text-black" />
               <span className="text-gray-800 font-medium text-[1.1rem]">iOS</span>
-              <button className="px-6 py-1.5 rounded-md bg-black hover:bg-gray-800 text-white font-medium transition-colors text-sm shadow-sm hover:shadow">
+              <button className="px-6 py-1.5 rounded-md bg-black hover:bg-gray-800 text-white font-medium transition-colors text-sm shadow-sm hover:shadow cursor-pointer">
                 Download
               </button>
             </div>
@@ -84,7 +84,7 @@ const AvailablePlatforms = () => {
             <div className="flex flex-col items-center gap-3">
               <FaAndroid className="w-10 h-10 text-[#3DDC84]" />
               <span className="text-gray-800 font-medium text-[1.1rem]">Android</span>
-              <button className="px-6 py-1.5 rounded-md bg-[#3DDC84] hover:bg-[#34C575] text-white font-medium transition-colors text-sm shadow-sm hover:shadow">
+              <button className="px-6 py-1.5 rounded-md bg-[#3DDC84] hover:bg-[#34C575] text-white font-medium transition-colors text-sm shadow-sm hover:shadow cursor-pointer">
                 Download
               </button>
             </div>
