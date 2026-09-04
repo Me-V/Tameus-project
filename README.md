@@ -22,21 +22,24 @@ A modern, highly responsive, and pixel-perfect landing page clone of TransferNow
 First, ensure you have Node.js installed on your machine.
 
 1. **Clone the repository** (if applicable) and navigate to the project directory:
+
    ```bash
    cd Tameus-project
    ```
 
 2. **Install the dependencies**:
+
    ```bash
    npm install
    ```
 
 3. **Run the development server**:
+
    ```bash
    npm run dev
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [https://tameus-project.vercel.app](https://tameus-project.vercel.app) with your browser to see the result.
 
 ## 📁 Project Structure
 
@@ -46,4 +49,5 @@ First, ensure you have Node.js installed on your machine.
 - `public/`: Static assets including images and the local `hero-video.mp4`.
 
 ## 📝 Notes
+
 This project was generated using `create-next-app` and uses Next.js version 16.3.4.
